@@ -1,6 +1,8 @@
 # RAW-Diffusion: RGB-Guided Diffusion Models for High-Fidelity RAW Image Generation
 
-> RAW-Diffusion: RGB-Guided Diffusion Models for High-Fidelity RAW Image Generation <br>
+[![paper](https://img.shields.io/badge/arXiv-2411.13150-B31B1B.svg?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2411.13150)
+
+> [**RAW-Diffusion: RGB-Guided Diffusion Models for High-Fidelity RAW Image Generation**](https://arxiv.org/abs/2411.13150) <br>
 > Christoph Reinders, Radu Berdan*, Beril Besbinar*, Junji Otsuka, and Daisuke Iso
 
 Official implementation of the paper "RAW-Diffusion: RGB-Guided Diffusion Models for High-Fidelity RAW Image Generation" [WACV 2025].
