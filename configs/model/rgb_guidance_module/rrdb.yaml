@@ -1,0 +1,4 @@
+_target_: rawdiffusion.models.rgb_guidance_module.rrdb.RRDBNet
+_partial_: true
+nf: 64
+nb: 4

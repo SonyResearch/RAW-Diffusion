@@ -1,0 +1,8 @@
+defaults:
+- base
+- _self_
+
+data_dir: data/NOD_processed/NOD_patches_3
+camera_name: Nikon750
+file_list: Nikon750_train.txt
+batch_size: 4

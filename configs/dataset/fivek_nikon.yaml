@@ -1,0 +1,4 @@
+defaults:
+- train: fivek_nikon
+- val: fivek_nikon
+- _self_

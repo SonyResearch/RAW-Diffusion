@@ -1,0 +1,4 @@
+defaults:
+- train: fivek_nikon_subsample
+- val: fivek_nikon
+- _self_

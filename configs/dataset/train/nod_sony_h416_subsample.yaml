@@ -1,0 +1,5 @@
+defaults:
+- nod_sony_h416
+- _self_
+
+resample_dataset_size: 2571

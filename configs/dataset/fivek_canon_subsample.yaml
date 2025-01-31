@@ -1,0 +1,4 @@
+defaults:
+- train: fivek_canon_subsample
+- val: fivek_canon
+- _self_

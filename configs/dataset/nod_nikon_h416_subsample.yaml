@@ -1,0 +1,4 @@
+defaults:
+- train: nod_nikon_h416_subsample
+- val: nod_nikon_h416
+- _self_

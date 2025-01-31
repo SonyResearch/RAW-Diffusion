@@ -1,0 +1,4 @@
+defaults:
+- train: nod_nikon_patches_subsample
+- val: nod_nikon_patches
+- _self_

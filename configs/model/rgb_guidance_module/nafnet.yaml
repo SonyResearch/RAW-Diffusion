@@ -1,0 +1,6 @@
+_target_: rawdiffusion.models.rgb_guidance_module.nafnet.NAFNet
+_partial_: true
+enc_blk_nums: [2, 2, 4, 8]
+middle_blk_num: 4
+dec_blk_nums: [2, 2, 2, 2]
+width: 64

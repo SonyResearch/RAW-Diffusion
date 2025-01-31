@@ -1,0 +1,8 @@
+defaults:
+- base
+- _self_
+
+data_dir: ./data/fivek_dataset_processed/fivek_patches_3/
+camera_name: Canon_EOS_5D
+file_list: Canon_EOS_5D_train.txt
+batch_size: 4

@@ -1,0 +1,16 @@
+defaults:
+  - rawdiffusion
+  - _self_
+
+dataset:
+  val:
+    batch_size: 1
+
+
+checkpoint_name: "last.ckpt"
+save_pred: false
+save_tar: false
+rgb_only: false
+save_visualization_interval: 500
+save_timesteps: false
+save_as_hdf5: true

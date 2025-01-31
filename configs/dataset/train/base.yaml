@@ -1,0 +1,4 @@
+is_train: True
+min_mode: ${general.min_mode}
+max_items: null
+resample_dataset_size: null

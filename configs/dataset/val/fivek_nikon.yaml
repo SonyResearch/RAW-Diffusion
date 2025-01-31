@@ -1,0 +1,8 @@
+defaults:
+- base
+- _self_
+
+data_dir: ./data/fivek_dataset_processed/fivek_patches_3/
+camera_name: NIKON_D700
+file_list: NIKON_D700_test.txt
+batch_size: 4

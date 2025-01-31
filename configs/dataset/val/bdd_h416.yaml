@@ -1,0 +1,8 @@
+defaults:
+- base
+- _self_
+
+data_dir: data/BDD_processed/bdd100k_h416
+camera_name: null
+file_list: train_100k.txt
+batch_size: 4

@@ -1,0 +1,5 @@
+_target_: rawdiffusion.models.rgb_guidance_module.edsr.EDSR
+_partial_: true
+n_resblocks: 4
+n_feats: 64
+bn: False

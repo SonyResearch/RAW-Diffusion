@@ -1,0 +1,5 @@
+defaults:
+- nod_nikon_h416
+- _self_
+
+resample_dataset_size: 3206

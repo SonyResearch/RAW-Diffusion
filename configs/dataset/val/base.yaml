@@ -1,0 +1,3 @@
+is_train: False
+resample_dataset_size: null
+min_mode: ${general.min_mode}    

@@ -1,0 +1,84 @@
+defaults:
+  - dataset: nod_nikon
+  - model/rgb_guidance_module: edsr # edsr
+  - override hydra/launcher: slurm_rich
+  - _self_
+  
+general:
+  lr_scheduler: 'linear' # linear, cosine
+  lr: 1e-4
+  weight_decay: 0.0
+  schedule_sampler: "uniform"
+  max_steps: 70000
+  drop_rate: 0.0
+  save_interval: 1000
+  checkpoint: true
+  suffix: null
+
+  weight_l2: 1.0
+  weight_l1: 1.0
+  weight_logl1: 1.0
+
+  check_val_every_n_epoch: 1
+  eval_diffusion_process_interval: 5
+  log_train_images_interval: 500
+
+  val_sampling_frequency: 20 # number of batches that are evaluated per validation
+  log_val_sampling_images_interval: 4 # number of log batches: val_sampling_frequency / log_val_sampling_images_interval
+  min_mode: 'black_level' # min_value, black_level
+  
+  seed: 0
+  image_size: 256
+
+model:
+  _target_: rawdiffusion.models.rawdiffusion.RAWDiffusionModel
+
+  model_channels: 32
+  num_res_blocks: 2
+  num_heads: 4
+  num_heads_upsample: -1
+  num_head_channels: 64
+  attention_resolutions: "16,8"
+  channel_mult: ""
+  dropout: 0.0
+  use_checkpoint: True
+  use_scale_shift_norm: True
+  resblock_updown: True
+  use_new_attention_order: False
+  in_channels: 4
+  out_channels: 4
+  mid_attention: True
+  c_channels: 64
+  out_tanh: True
+  latent_drop_rate: 0.0
+  conditional_block_name: RGBGuidedResidualBlock
+  norm_num_groups: 8
+
+diffusion:
+  learn_sigma: False
+  steps: 1000
+  noise_schedule: linear
+  timestep_respacing: ""
+  use_kl: False
+  predict_xstart: True
+  rescale_timesteps: False
+  rescale_learned_sigmas: False
+
+diffusion_val:
+  learn_sigma: ${diffusion.learn_sigma}
+  steps: ${diffusion.steps}
+  noise_schedule: ${diffusion.noise_schedule}
+  timestep_respacing: ddim24
+  use_kl: ${diffusion.use_kl}
+  predict_xstart: ${diffusion.predict_xstart}
+  rescale_timesteps: ${diffusion.rescale_timesteps}
+  rescale_learned_sigmas: ${diffusion.rescale_learned_sigmas}
+
+
+hydra:
+  launcher:
+    gres: gpu:1 
+    mem_gb: 12
+    cpus_per_task: 6
+    timeout_min: 1440
+    partition: gpu_normal

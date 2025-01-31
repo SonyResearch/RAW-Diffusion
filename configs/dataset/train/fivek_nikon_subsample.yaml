@@ -1,0 +1,5 @@
+defaults:
+- fivek_nikon
+- _self_
+
+resample_dataset_size: 4509

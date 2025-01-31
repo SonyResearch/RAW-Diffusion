@@ -1,0 +1,5 @@
+defaults:
+- nod_nikon_patches
+- _self_
+
+resample_dataset_size: 28854

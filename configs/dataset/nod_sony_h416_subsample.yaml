@@ -1,0 +1,4 @@
+defaults:
+- train: nod_sony_h416_subsample
+- val: nod_sony_h416
+- _self_

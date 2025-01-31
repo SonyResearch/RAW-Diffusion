@@ -1,0 +1,8 @@
+defaults:
+- base
+- _self_
+
+data_dir: data/NOD_processed/NOD_patches_3
+camera_name: SonyRX100m7
+file_list: Sony_RX100m7_train.txt
+batch_size: 4
