@@ -3,6 +3,9 @@ data/
 experiments
 outputs
 multirun
+work_dirs*
+object_detection/mmdet/.mim
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
