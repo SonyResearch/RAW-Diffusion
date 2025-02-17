@@ -33,14 +33,14 @@ python -m datasets.nod_subsample --dataset_path=data/NOD_processed/NOD_h416_d32 
 
 ## Cityscapes
 
-Download the dataset from https://www.cityscapes-dataset.com
+Download the dataset from https://www.cityscapes-dataset.com to `data/Cityscapes`
 ```bash
 python -m datasets.cityscapes_process
 ```
 
 ## BDD100K
 
-Download the dataset from http://bdd-data.berkeley.edu
+Download the dataset from http://bdd-data.berkeley.edu to `data/BDD`
 ```bash
 python -m datasets.bdd_process
 ```

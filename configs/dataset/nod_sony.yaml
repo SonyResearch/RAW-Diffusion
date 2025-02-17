@@ -1,0 +1,4 @@
+defaults:
+- train: nod_sony
+- val: nod_sony
+- _self_

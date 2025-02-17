@@ -86,14 +86,14 @@ python sample.py dataset=fivek_canon general.seed=0
 
 #### NOD Nikon
 ```bash
-python train.py dataset=nod_nikon_patches general.seed=0
-python sample.py dataset=nod_nikon_patches general.seed=0
+python train.py dataset=nod_nikon general.seed=0
+python sample.py dataset=nod_nikon general.seed=0
 ```
 
 #### NOD Sony
 ```bash
-python train.py dataset=nod_sony_patches general.seed=0
-python sample.py dataset=nod_sony_patches general.seed=0
+python train.py dataset=nod_sony general.seed=0
+python sample.py dataset=nod_sony general.seed=0
 ```
 
 ## Small Data RGB2RAW
@@ -114,14 +114,14 @@ python sample.py dataset=fivek_canon_subsample dataset.train.max_items=25 genera
 
 #### NOD Nikon
 ```bash
-python train.py dataset=nod_nikon_patches_subsample dataset.train.max_items=25 general.seed=0
-python sample.py dataset=nod_nikon_patches_subsample dataset.train.max_items=25 general.seed=0
+python train.py dataset=nod_nikon_subsample dataset.train.max_items=25 general.seed=0
+python sample.py dataset=nod_nikon_subsample dataset.train.max_items=25 general.seed=0
 ```
 
 #### NOD Sony
 ```bash
-python train.py dataset=nod_sony_patches_subsample dataset.train.max_items=25 general.seed=0
-python sample.py dataset=nod_sony_patches_subsample dataset.train.max_items=25 general.seed=0
+python train.py dataset=nod_sony_subsample dataset.train.max_items=25 general.seed=0
+python sample.py dataset=nod_sony_subsample dataset.train.max_items=25 general.seed=0
 ```
 
 ## Cityscapes-RAW and BDD100K-RAW

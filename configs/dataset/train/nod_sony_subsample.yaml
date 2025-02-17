@@ -1,5 +1,5 @@
 defaults:
-- nod_sony_patches
+- nod_sony
 - _self_
 
 resample_dataset_size: 23139

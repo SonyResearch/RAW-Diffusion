@@ -1,4 +1,0 @@
-defaults:
-- train: nod_sony_patches
-- val: nod_sony_patches
-- _self_

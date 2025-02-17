@@ -1,0 +1,4 @@
+defaults:
+- train: nod_nikon
+- val: nod_nikon
+- _self_

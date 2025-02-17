@@ -1,4 +1,0 @@
-defaults:
-- train: nod_nikon_patches
-- val: nod_nikon_patches
-- _self_

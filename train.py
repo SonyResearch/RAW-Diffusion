@@ -346,7 +346,7 @@ class RAWDiffusionModule(LightningModule):
 
 
 @hydra.main(version_base="1.3", config_path="configs", config_name="rawdiffusion")
-def my_app(cfg: DictConfig) -> None:
+def main(cfg: DictConfig) -> None:
     mod_config(cfg)
     OmegaConf.resolve(cfg)
     print(OmegaConf.to_yaml(cfg))
@@ -409,4 +409,4 @@ def my_app(cfg: DictConfig) -> None:
 
 
 if __name__ == "__main__":
-    my_app()
+    main()
